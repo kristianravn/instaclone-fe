@@ -1,13 +1,23 @@
-
+import {useState, useEffect} from 'react';
+import {  Routes, Route, BrowserRouter } from 'react-router-dom';
+import LandingPage from './pages/landingpage/LandingPage';
+import ImagesPage from './pages/imagespage/ImagesPage';
 import './App.css'
-import LogOrSign from './components/LogOrSign/LogOrSign'
+import Layout from './components/layout/Layout';
 
 function App() {
   
 
   return (
-    <>
-      <p><b>Instaclone</b></p>
+    <>    
+     <div>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/images" element = {<ImagesPage/>} />
+          </Routes>
+         </Layout>
+      </div>
     </>
   )
 }
