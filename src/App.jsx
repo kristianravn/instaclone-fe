@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <p>hello world</p>
+      <p><b>Instaclone</b></p>
       <LogOrSign/>
     </>
   )

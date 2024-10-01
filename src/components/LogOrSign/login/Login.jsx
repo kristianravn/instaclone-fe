@@ -7,7 +7,7 @@ const Login = () => {
   <div className='login-form'>
     <form>
       <h3>Login</h3>
-      <div>
+      <div className='loginBoxes'>
               <input
                 type="text"
                 placeholder="Username..."
@@ -16,10 +16,10 @@ const Login = () => {
                 type="text"
                 placeholder="Password..."
               />
-            </div>
+     </div>
             <button type="submit">Login</button>
           </form>
-        </div>
+        </div>  
   )
   
 }
