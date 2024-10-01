@@ -1,0 +1,26 @@
+FE Component Structure
+
+Folder Structure
+src:
+    pages:
+        landingpage:
+            LandingPage.jsx
+            LandingPage.css
+    components:
+        logorsign:
+            LogOrSign.jsx
+            LogOrSign.css
+        login:
+            Login.jsx
+            Login.css
+        signup:
+            Signup.jsx
+            Signup.css
+
+Component Nesting
+
+App:
+    LandingPage:
+        LogOrSign:
+            Login
+            Signup
