@@ -1,25 +1,24 @@
 import {useState, useEffect} from 'react';
 import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import LandingPage from './pages/landingpage/LandingPage';
-import ImagePage from './pages/imagespage/ImagesPage';
+import ImagesPage from './pages/imagespage/ImagesPage';
 import './App.css'
+import Layout from './components/layout/Layout';
 
 function App() {
   
 
   return (
     <>
-      <BrowserRouter>
-     <div>
     
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/ImagePage" element = {<ImagePage/>} />
-        
-     
-      </Routes>
+     <div>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/images" element = {<ImagesPage/>} />
+          </Routes>
+         </Layout>
       </div>
-    </BrowserRouter>
     </>
   )
 }
