@@ -5,11 +5,9 @@ import './LogOrSign.css'
 
 const LogOrSign = () => {
   return (
-    <div>
       <div className="logOrSign-container">
         <Login /> 
         <Signup />
-    </div>
     </div>
   )
 }

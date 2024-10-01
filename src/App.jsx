@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <p><b>Instaclone</b></p>
-      <LogOrSign/>
     </>
   )
 }

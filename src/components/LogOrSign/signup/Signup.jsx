@@ -1,12 +1,13 @@
 import React from 'react'
+import "./Signup.css"
 
 const Signup = () => {
   return (
 
-    <div>
+    <div className='signup-outer'>
         <form>
             <h3>Signup</h3>
-            <div>
+            <div className='Signup-form'>
                 <input
                 type="text"
                 placeholder= "Username..."
