@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-import  {loginFetch}  from "./src/utils/fetch.js";
+import  {signupFetch}  from "../../../utils/fetch";
 
 import "./Signup.css"
-import e from 'express';
 
 const Signup = ({setLoggedUser, setIsLoggedIn}) => {
   const [username, setUsername] = useState("");
@@ -16,7 +15,7 @@ const Signup = ({setLoggedUser, setIsLoggedIn}) => {
 const handleSubmit = async(e) =>{
   e.preventDefault();
   console.log("signup handleSubmit");
-  const data = await SignupFetch(username, email, password);
+  const data = await signupFetch(username, email, password);
 
   if (data.message === "success"){
   setLoggedUser(data);

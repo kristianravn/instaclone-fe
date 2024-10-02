@@ -32,7 +32,7 @@ export const signupFetch = async(username, email, password) =>{
                 },
                 body: JSON.stringify({
                     username: username,
-                    password: password,
+                    password: (""),
                 }),
             });
             const data = await response.json();
