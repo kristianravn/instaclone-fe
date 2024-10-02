@@ -1,0 +1,12 @@
+.footer-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-inner-wrapper {
+  height: 8vh;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+}
