@@ -4,7 +4,7 @@ import React from 'react'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div className='height-eighty'>LandingPage</div>
   );
 }
 
