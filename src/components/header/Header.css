@@ -1,0 +1,20 @@
+.header-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner-wrapper {
+  height: 8vh;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+/* header-logo */
+.header-logo img { /* Target the image inside .header-logo */
+    height: 8vh;   /* You can adjust this to your desired size */
+    width: auto;   /* Maintain the aspect ratio */
+    justify-content: center;
+}
+ 

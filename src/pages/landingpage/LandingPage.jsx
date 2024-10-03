@@ -3,7 +3,7 @@ import LogOrSign from "../../components/LogOrSign/LogOrSign"
 
 const LandingPage = ({setLoggedUser, setIsLoggedIn}) => {
   return (
-    <LogOrSign setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
+    <div className='height-eighty'>LandingPage</div>
   );
 }
 
