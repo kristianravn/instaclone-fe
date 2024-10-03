@@ -20,26 +20,3 @@ export const signupFetch = async(username, email, password) =>{
         alert("there is an error. please check your  console.");
     }
     };
-
-    export const loginFetch = async (username, password) =>{
-        console.log("username password", username, password)
-    try {
-        const response = await fetch("http://localhost:5001/users/login",{
-                method: "POST",
-                mode: "cors",
-                headers:{
-                    "Content-type": "application/json"
-                },
-                body: JSON.stringify({
-                    username: username,
-                    password: (""),
-                }),
-            });
-            const data = await response.json();
-            console.log("data in loginFetch", data);
-            return data;
-    }catch (error){
-            console.log(error);
-            alert("there is an error. please check your console.");
-    };
-    };
