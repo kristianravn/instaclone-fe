@@ -1,8 +1,12 @@
-import React from 'react'
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='height-ten flex flex-column footer-wrapper'>
+    <div className=' flex footer-inner-wrapper'>
+      <p>Footer</p>
+    </div>
+  </div>
   )
 }
 
