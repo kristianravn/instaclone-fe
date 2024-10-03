@@ -1,24 +1,51 @@
-import React from 'react'
+import { useState } from 'react'
+
+import  {signupFetch}  from "../../../utils/fetch";
+
 import "./Signup.css"
 
-const Signup = () => {
+const Signup = ({setLoggedUser, setIsLoggedIn}) => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleChange = (e, setter) => {
+    setter(e.target.value);
+  }; 
+const handleSubmit = async(e) =>{
+  e.preventDefault();
+  console.log("signup handleSubmit");
+  const data = await signupFetch(username, email, password);
+
+  if (data.message === "success"){
+  setLoggedUser(data);
+  setIsLoggedIn(true);
+  }
+};
+
   return (
 
     <div className='signup-outer'>
-        <form>
-            <h3>Signup</h3>
+        <form 
+        onSubmit={(e) => handleSubmit(e)}
+        >    
+          <h3>Signup</h3>
             <div className='Signup-form'>
+              
                 <input
+                onChange={(e)=> handleChange(e,setUsername)}
                 type="text"
                 placeholder= "Username..."
                 />
 
                 <input
+                onChange={(e)=> handleChange(e,setEmail)}
                 type="text"
                 placeholder= "Email..."
                 />
             
                 <input
+                onChange={(e)=> handleChange(e,setPassword)}
                 type="text"
                 placeholder= "Password..."
                 />
