@@ -1,11 +1,13 @@
-import React from 'react'
-
-
+import React from 'react';
+import './LandingPage.css'; 
 
 const LandingPage = () => {
   return (
-    <div className='height-eighty'>LandingPage</div>
+    <div className='height-eighty container'>
+      <div className="profile-pic"></div>
+     
+    </div>
   );
 }
 
-export default LandingPage
+export default LandingPage;

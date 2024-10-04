@@ -5,24 +5,6 @@ import ImagesPage from './pages/imagespage/ImagesPage';
 import './App.css'
 import Layout from './components/layout/Layout';
 
-const App = () => {
-  const [landingPage, setlandingPage] = useState([]);
-  const [imagesPage, setimagesPage] = useState([]);
-  useEffects(()) => {
-    const fetchImages = async () => {
-      try{
-        const response = await "".get ("");
-
-        setlandingPage(response.data);
-      }catch(error){
-        console.log("error fetching images", error);
-      }
-    }
-  }
-};
-
-
-
 function App() {
   
 
