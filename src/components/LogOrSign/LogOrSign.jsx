@@ -3,11 +3,19 @@ import Login from './login/Login'
 import Signup from './signup/Signup'
 import './LogOrSign.css'
 
-const LogOrSign = ({setLoggedUser,setIsLoggedIn, setApprovedUser}) => {
+export const Test = () => {
+  return (
+    <div>Test</div>
+  )
+}
+
+
+const LogOrSign = ({setLoggedUser,setIsLoggedIn }) => {
   return (
       <div className="logOrSign-container">
-        <Login setApprovedUser={setApprovedUser}/> 
         <Signup setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
+        <Test/>
+        <Login setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/> 
     </div>
   )
 }

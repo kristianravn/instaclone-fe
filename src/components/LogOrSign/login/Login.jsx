@@ -4,7 +4,7 @@ import  {loginFetch}  from "../../../utils/fetch";
 
 import "./Login.css"
 
-const Login = ({setApprovedUser}) => {
+const Login = ({setLoggedUser, setIsLoggedIn}) => {
   const [username, setUsername]= useState("");
   const [userPassword, setUserPassword]= useState("");  
   
@@ -16,9 +16,8 @@ const Login = ({setApprovedUser}) => {
     const data = loginFetch(username,userPassword);
   
     if (data.message==="success"){
-    setUsername(username.data)
-    setUserPassword(userPassword.data)
-    setApprovedUser(true)
+      setIsLoggedIn(true);
+      setLoggedUser(data.user)
     };
     
   return (
