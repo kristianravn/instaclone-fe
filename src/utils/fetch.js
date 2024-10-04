@@ -19,6 +19,7 @@ export const signupFetch = async(username, email, password) =>{
         console.log(error);
         alert("there is an error. please check your  console.");
     }
+
     };
 
     export const loginFetch = async (username, password) =>{
@@ -65,3 +66,4 @@ export const signupFetch = async(username, email, password) =>{
         }
     };
     
+

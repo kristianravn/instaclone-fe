@@ -1,5 +1,5 @@
 import React from 'react'
-import "./header.css"
+import "./Header.css"
 import cloneHelmet from '../../assets/images/clone-helmet.png';
 
 
