@@ -7,7 +7,7 @@ const LandingPage = ({setLoggedUser, setIsLoggedIn}) => {
   return (
     <div className='height-eighty container'>
       <div className="profile-pic"></div>
-     
+      <LogOrSign setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
     </div>
   );
 }
