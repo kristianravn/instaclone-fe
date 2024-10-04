@@ -4,9 +4,23 @@
 }
 
 .footer-inner-wrapper {
-  height: 8vh;
+  height: 10vh;
   width: 90%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-top: 2px solid black;
+}
+
+.instaclone-app {
+  margin-right: auto;
+}
+
+
+.header-logo img { 
+  margin-right: auto;
+   
+}
+
+.header-logo img {
+  height: 40px;
 }

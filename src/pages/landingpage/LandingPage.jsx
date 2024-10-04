@@ -1,10 +1,15 @@
-import LogOrSign from "../../components/LogOrSign/LogOrSign"
+import React from 'react';
+import './LandingPage.css'; 
 
+import LogOrSign from "../../components/LogOrSign/LogOrSign"
 
 const LandingPage = ({setLoggedUser, setIsLoggedIn}) => {
   return (
-    <LogOrSign setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
+    <div className='height-eighty container'>
+      <div className="profile-pic"></div>
+     
+    </div>
   );
 }
 
-export default LandingPage
+export default LandingPage;
