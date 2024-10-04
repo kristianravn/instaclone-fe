@@ -56,31 +56,9 @@
   background-color: #0056b3;
 }
 
-.Profile-btn {
-  padding: 5px 20px;
-  background-color:#fbfcfd;
-  color: rgb(13, 13, 13);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.Profile-btn:hover {
-  background-color: #0056b3;
-}
 
-.Notifications-btn {
-  padding: 5px 20px;
-  background-color:#f3efef;
-  color: rgb(13, 13, 13);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.Notifications-btn:hover {
-  background-color: #0056b3;
-}
 
 
 
@@ -145,12 +123,3 @@
 
 
 
-/* .buttons {
-  padding: 5px 20px;
-  justify-content: flex-end;
-  background-color: #31383f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */

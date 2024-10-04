@@ -1,7 +1,5 @@
-import { useState } from 'react'
-
+import { useState, useNavigate } from 'react'
 import  {signupFetch}  from "../../../utils/fetch";
-
 import "./Signup.css"
 
 const Signup = ({setLoggedUser, setIsLoggedIn}) => {
@@ -9,10 +7,12 @@ const Signup = ({setLoggedUser, setIsLoggedIn}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate () 
+
   const handleChange = (e, setter) => {
     setter(e.target.value);
   }; 
-const handleSubmit = async(e) =>{
+  const handleSubmit = async(e) =>{
   e.preventDefault();
   console.log("signup handleSubmit");
   const data = await signupFetch(username, email, password);
@@ -20,6 +20,7 @@ const handleSubmit = async(e) =>{
   if (data.message === "success"){
   setLoggedUser(data);
   setIsLoggedIn(true);
+  navigate('/images');
   }
 };
 

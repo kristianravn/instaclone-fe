@@ -1,8 +1,16 @@
+
+import React, { useState, useNavigate } from 'react'
+import "./Login.css"
+
 import React, { useState } from 'react'
+
 
 import  {loginFetch}  from "../../../utils/fetch";
 
 import "./Login.css"
+
+
+  const navigate = useNavigate () 
 
 const Login = ({setLoggedUser, setIsLoggedIn}) => {
   const [username, setUsername]= useState("");
@@ -20,6 +28,7 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
       setLoggedUser(data.user)
     };
   };
+
 
   return (
   <div className='login'>
