@@ -8,4 +8,3 @@ const LandingPage = ({setLoggedUser, setIsLoggedIn}) => {
 }
 
 export default LandingPage
-{/* <div className='height-eighty'>LandingPage</div> */}

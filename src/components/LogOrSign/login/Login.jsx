@@ -19,7 +19,8 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
       setIsLoggedIn(true);
       setLoggedUser(data.user)
     };
-    
+  };
+
   return (
   <div className='login'>
     <form 
@@ -40,8 +41,8 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
           </div>
             <button type="submit">Login</button>
           </form>
-        </div>  
+  </div>  
   );
 };
-};
+
 export default Login; 
