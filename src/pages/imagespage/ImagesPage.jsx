@@ -1,10 +1,10 @@
-import React from 'react'
+import ImageGallery from "../../components/imageGallery/ImageGallery"
 
 
 
 const ImagesPage = () => {
   return (
-    <div>ImagesPage</div>
+    <div><ImageGallery /></div>
   )
 }
 

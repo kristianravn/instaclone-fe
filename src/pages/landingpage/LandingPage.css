@@ -1,0 +1,25 @@
+/* Specific to the LandingPage component
+.height-eighty {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .container .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url( '../../assets/images/clone-helmet.png');
+    background-size: cover;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+ 
+  

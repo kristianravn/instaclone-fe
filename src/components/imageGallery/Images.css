@@ -1,0 +1,14 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .image-gallery img {
+    width: 200px;  /* Fixed width for all images */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the box and maintains aspect ratio */
+    margin: 10px; /* Adds spacing between images */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+  

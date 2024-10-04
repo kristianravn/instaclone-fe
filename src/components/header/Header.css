@@ -1,20 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
 .header-wrapper {
     justify-content: center;
     align-items: center;
 }
 
 .header-inner-wrapper {
-  height: 8vh;
+  height: 15vh;
   width: 90%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
+  background-color: #ffffff;
 }
 
-/* header-logo */
-.header-logo img { /* Target the image inside .header-logo */
-    height: 8vh;   /* You can adjust this to your desired size */
-    width: auto;   /* Maintain the aspect ratio */
-    justify-content: center;
+
+.header-logo img { 
+  margin-right: auto;
+   
+}
+
+.header-logo img {
+  height: 40px;
 }
  
+
+
+
+
+.Image-gallery-btn {
+  padding: 5px 20px;
+  justify-content: flex-end;
+  background-color: #f3f4f6;
+  color: rgb(11, 11, 11);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Image-gallery-btn:hover {
+  background-color: #0056b3;
+}
+
+.Signout-btn {
+  padding: 5px 20px;
+  background-color:#f4f4f7;
+  color: rgb(11, 10, 10);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Signout-btn:hover {
+  background-color: #0056b3;
+}
+
+.Profile-btn {
+  padding: 5px 20px;
+  background-color:#fbfcfd;
+  color: rgb(13, 13, 13);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Profile-btn:hover {
+  background-color: #0056b3;
+}
+
+.Notifications-btn {
+  padding: 5px 20px;
+  background-color:#f3efef;
+  color: rgb(13, 13, 13);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Notifications-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.Favourites-btn {
+  padding: 5px 20px;
+  justify-content: flex-end;
+  background-color: #eff3f7;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Favourites-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Star Wars style for InstaCLONE text on the left */
+.Instaclone-app {
+  margin-right: auto; /* Pushes text to the far left */
+}
+
+.Instaclone-app p {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-size: 36px; /* Large font size */
+  color: #be1616; /* Star Wars yellow */
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px; /* Spacing between letters */
+  text-transform: uppercase; /* Make text all uppercase */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Glow effect */
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+/* Container for buttons, aligned on the right */
+.button-container {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+  margin-left: auto; /* Pushes the buttons to the far right */
+}
+
+/* Button styling
+.image-gallery-btn, .another-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.image-gallery-btn:hover, .another-button:hover {
+  background-color: #0056b3;
+} */
+
+
+
+
+
+
+
+/* .buttons {
+  padding: 5px 20px;
+  justify-content: flex-end;
+  background-color: #31383f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
