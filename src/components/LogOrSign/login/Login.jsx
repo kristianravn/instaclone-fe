@@ -1,4 +1,4 @@
-import React, { useState, useNavigate } from 'react'
+import React, { useState, useNavigatebu } from 'react'
 import "./Login.css"
 
 const Login = () => {
