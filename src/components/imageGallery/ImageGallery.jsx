@@ -1,5 +1,7 @@
 // const response = await fetch(`${import.meta.env.VITE_UNSPLASH_URI}`)
 import React, { useState, useEffect } from 'react';
+import './images.css';
+
 
 
 
