@@ -9,7 +9,6 @@ import Layout from './components/layout/Layout';
 function App() {
   const [loggedUser, setLoggedUser] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  
   return (
     <>    
      <div>
