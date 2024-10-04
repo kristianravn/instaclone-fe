@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useNavigate } from 'react'
 import "./Login.css"
 
 const Login = () => {
 
+  const navigate = useNavigate () 
 
   return (
   <div className='login'>
