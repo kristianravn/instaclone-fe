@@ -12,7 +12,7 @@ function App() {
   return (
     <>    
      <div>
-        <Layout>
+        <Layout setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}>
           <Routes>
             <Route path="/" element={<LandingPage setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>} />
             <Route path="/images" element = {<ImagesPage/>} />

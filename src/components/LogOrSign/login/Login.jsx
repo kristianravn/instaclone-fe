@@ -1,8 +1,8 @@
 
-import React, { useState, useNavigate } from 'react'
+import  { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./Login.css"
 
-import React, { useState } from 'react'
 
 
 import  {loginFetch}  from "../../../utils/fetch";
@@ -10,11 +10,13 @@ import  {loginFetch}  from "../../../utils/fetch";
 import "./Login.css"
 
 
-  const navigate = useNavigate () 
+  
 
 const Login = ({setLoggedUser, setIsLoggedIn}) => {
   const [username, setUsername]= useState("");
   const [userPassword, setUserPassword]= useState("");  
+
+  const navigate = useNavigate() 
   
   const handleChange = (e, setter) => {
     setter(e.target.value);
