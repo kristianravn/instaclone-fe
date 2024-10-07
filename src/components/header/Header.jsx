@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import "./Header.css"
 import cloneHelmet from '../../assets/images/clone-helmet.png';
 
-const Header = ({setIsloggedin,setLoggedUser}) => {
+const Header = ({setIsLoggedIn,setLoggedUser}) => {
   const navigate = useNavigate();
 
   const logout = (e) => {
     e.preventDefault();
     setLoggedUser(false);
-    setIsloggedin(false);
+    setIsLoggedIn(false);
     navigate('/');
   } 
 
